@@ -5,14 +5,15 @@ on:
       name: 
         description: "display name"
         required: true
-        type: choice
-        default: venkat
+        default: "venkat"
+        type: "choice"
         options:
-          - krishnan
-          - sparrow
+          - "krishnan"
+          - "sparrow"
+        
 jobs:
   build:
     runs-on: self-hosted
     steps:
       - name: display message
-        run: echo "Hello ${{ github.event.inputs.name }}""
+        run: echo "Hello ${{ github.event.inputs.name }}"
