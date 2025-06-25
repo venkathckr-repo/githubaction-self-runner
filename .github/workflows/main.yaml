@@ -1,0 +1,9 @@
+name: "github runner test"
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: display message
+        run: echo "Hello world"
